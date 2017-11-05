@@ -1,0 +1,26 @@
+﻿@model FortuneTellerMVC.Models.BirthMonth
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BirthMonth</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthMonthName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthMonthName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BirthMonthID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

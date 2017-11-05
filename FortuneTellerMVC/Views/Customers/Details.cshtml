@@ -1,0 +1,18 @@
+﻿@model FortuneTellerMVC.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+     
+    @ViewBag.FirstName @ViewBag.LastName will retire in @ViewBag.RetirementAge years, with @ViewBag.BankAccountBalance in the bank, with a vacation home in @ViewBag.VacationHome and a @ViewBag.ModeOfTransportation in the garage.
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
